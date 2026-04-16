@@ -38,7 +38,7 @@ const commands = [
 const rest = new REST({ version: '10' }).setToken(TOKEN);
 
 (async () => {
-  await rest.put(Routes.applicationCommands(CLIENT_ID), { body: commands });
+  await rest.put(Routes.applicationGuildCommands("1494363026579652718" , "1493930510039126176"), { body: commands });
 })();
 
 client.on('interactionCreate', async interaction => {
